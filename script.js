@@ -57,14 +57,8 @@ function cascadeHero() {
   });
 }
 
-let dejaVue = false;
-try {
-  dejaVue = sessionStorage.getItem('isles-ouverture') === '1';
-  if (!dejaVue) sessionStorage.setItem('isles-ouverture', '1');
-} catch (e) { /* stockage indisponible : on joue l'ouverture */ }
-
 if (ouverture) {
-  if (reduits || dejaVue) {
+  if (reduits) {
     finirOuverture();
   } else {
     document.body.classList.add('a-ouverture');

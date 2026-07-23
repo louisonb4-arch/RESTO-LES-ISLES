@@ -726,7 +726,7 @@ body.a-ouverture { overflow: hidden; }
     margin-left: auto;
     margin-right: -1vw;
     margin-top: -6vw;
-    width: min(76vw, 300px);
+    width: min(56vw, 230px);
     transform: rotate(2.5deg);
   }
   .hero__text { margin-top: 1.4rem; }

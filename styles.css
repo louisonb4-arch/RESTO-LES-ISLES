@@ -728,7 +728,13 @@ body.a-ouverture { overflow: hidden; }
   .intro__grid { flex-direction: column; }
   .intro .polaroid { align-self: flex-end; }
 
-  .album--plats { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  /* album : 2 colonnes régulières, hauteurs unifiées (recadrage, pas d'étirement) */
+  .album--plats { grid-template-columns: 1fr 1fr; gap: 1rem 0.8rem; }
+  .album--plats .polaroid img { aspect-ratio: 4 / 5; object-fit: cover; }
+  .album--plats .polaroid:nth-child(2n) { margin-top: 1rem; }
+  .album--plats .polaroid .chalknote { font-size: 1.05rem; }
+  .ardoise { padding-bottom: 3rem; }
+
   .pinboard { grid-template-columns: 1fr; max-width: 26rem; }
   .affichette:nth-child(2) { margin-top: 0; }
 
@@ -741,10 +747,6 @@ body.a-ouverture { overflow: hidden; }
 }
 
 @media (max-width: 420px) {
-  .album--plats { grid-template-columns: 1fr; }
-  .album--plats .polaroid:nth-child(2n) { margin-top: 0; }
-  .cour__grid { grid-template-columns: 1fr; }
-  .cadre--large { grid-column: span 1; }
-  .cour__grid .cadre:nth-child(2) { margin-top: 0; }
+  /* on reste en 2 colonnes : photos natives petites, une colonne = flou d'upscale */
   .hero__actions .btn { width: 100%; text-align: center; }
 }

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resto Les Isles — Bistrot de quartier, Haute-Île, Rezé</title>
+  <meta name="description" content="Resto Les Isles, bistrot de quartier à la Haute-Île, Rezé. Cuisine maison à l'ardoise, cour sous la treille, épicerie-cave, concerts. 29 rue des Chevaliers, 44400 Rezé — 02 40 75 49 06.">
+  <meta property="og:title" content="Resto Les Isles — Bistrot de quartier à Rezé">
+  <meta property="og:description" content="Cuisine maison à l'ardoise, cour sous la treille, épicerie-cave et concerts. 29 rue des Chevaliers, Haute-Île, Rezé.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.ouverture { display: none; }</style></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Resto Les Isles",
+    "servesCuisine": "Française",
+    "telephone": "+33240754906",
+    "email": "restolesisles@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "29 rue des Chevaliers",
+      "postalCode": "44400",
+      "addressLocality": "Rezé",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ouverture : l'ardoise du jour qu'on lève -->
+  <div class="ouverture" id="ouverture" aria-hidden="true">
+    <div class="ouverture__contenu">
+      <p class="ouverture__craie chalknote">aujourd’hui, à l’ardoise&nbsp;:</p>
+      <p class="ouverture__nom">Les&nbsp;Isles</p>
+      <p class="ouverture__lieu">Bistrot de quartier · Haute-Île · Rezé</p>
+    </div>
+    <div class="mosaic ouverture__mosaique" aria-hidden="true"></div>
+  </div>
+
+  <header class="topbar" id="topbar">
+    <a class="topbar__brand" href="#haut">Les&nbsp;Isles</a>
+    <nav class="topbar__nav" aria-label="Navigation principale">
+      <a href="#ardoise">L’ardoise</a>
+      <a href="#cour">La cour &amp; la salle</a>
+      <a href="#vie">La vie des Isles</a>
+      <a href="#infos">Venir</a>
+    </nav>
+    <a class="topbar__tel" href="tel:+33240754906">02 40 75 49 06</a>
+    <button class="topbar__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobilemenu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobilemenu" id="mobilemenu" hidden>
+    <nav aria-label="Navigation mobile">
+      <a href="#ardoise">L’ardoise</a>
+      <a href="#cour">La cour &amp; la salle</a>
+      <a href="#vie">La vie des Isles</a>
+      <a href="#infos">Venir</a>
+      <a class="mobilemenu__tel" href="tel:+33240754906">02 40 75 49 06</a>
+    </nav>
+    <div class="mosaic" aria-hidden="true"></div>
+  </div>
+
+  <main id="haut">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <p class="hero__eyebrow reveal">Bistrot de quartier · Haute-Île · Rezé</p>
+      <h1 class="hero__title">
+        <span class="hero__line reveal">Resto</span>
+        <span class="hero__line hero__line--big reveal">Les&nbsp;Isles</span>
+      </h1>
+      <div class="hero__body">
+        <figure class="hero__photo reveal">
+          <img src="images/crops/cour-treille.jpg" alt="La cour du restaurant sous la treille, avec ses chaises jaunes en métal" width="226" height="400">
+          <figcaption class="chalknote">la cour, sous la treille&nbsp;→</figcaption>
+        </figure>
+        <div class="hero__text reveal">
+          <p>Une maison de la Haute-Île où l’on mange ce qui est écrit à l’ardoise, où la cour est plantée d’une vraie vigne, et où il se passe toujours quelque chose&nbsp;: un concert, un vide-dressing, un anniversaire.</p>
+          <div class="hero__actions">
+            <a class="btn btn--rouge" href="tel:+33240754906">Réserver&nbsp;: 02 40 75 49 06</a>
+            <a class="btn btn--ligne" href="#ardoise">Voir l’ardoise</a>
+          </div>
+        </div>
+      </div>
+      <div class="mosaic" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro">
+      <div class="intro__grid">
+        <div class="intro__text reveal">
+          <p class="intro__lead">Au 29 rue des Chevaliers, entre les maisons basses de la Haute-Île, Les Isles est de ces adresses que le quartier se passe de bouche à oreille.</p>
+          <p>Une salle au sol de mosaïque ancienne, un comptoir qui sert aussi d’épicerie, des assiettes généreuses — frites maison, œufs mimosa, plats mijotés — et une cour cachée où la vigne fait l’ombre l’été. Rien de décoratif&nbsp;: tout ici sert depuis longtemps, et c’est exactement ce qui fait envie.</p>
+        </div>
+        <figure class="polaroid polaroid--tilt-r reveal">
+          <img src="images/crops/porte-terrasse.jpg" alt="La porte d'entrée ouverte sur la terrasse, carreaux de ciment au seuil" width="180" height="380">
+          <figcaption class="chalknote">le seuil, carreaux d’origine</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ARDOISE ============ -->
+    <section class="ardoise" id="ardoise">
+      <div class="ardoise__inner">
+        <header class="ardoise__head reveal">
+          <h2 class="ardoise__title">L’ardoise</h2>
+          <p class="ardoise__sub chalknote">cuisine maison — ça change selon le marché</p>
+        </header>
+
+        <div class="ardoise__cols">
+          <div class="ardoise__menu reveal">
+            <p class="ardoise__note">Aperçu de plats déjà passés à l’ardoise. La carte du jour change&nbsp;— appelez pour savoir ce qui mijote. <span class="aconfirmer">[Carte du moment à confirmer]</span></p>
+            <ul class="ardoise__list">
+              <li><span>Œufs mimosa</span></li>
+              <li><span>Grande assiette composée — terrine, beignets, salades</span></li>
+              <li><span>Brochette de bœuf, frites maison</span></li>
+              <li><span>Grillade du jour, frites, salade</span></li>
+              <li><span>Poisson en sauce, frites maison</span></li>
+              <li><span>Plat mijoté du moment</span></li>
+              <li><span>Assiette de fromages</span></li>
+              <li><span>Île flottante aux amandes</span></li>
+              <li><span>Panna cotta, coulis de fruits rouges</span></li>
+              <li><span>Gâteau maison du jour</span></li>
+            </ul>
+            <p class="ardoise__prix aconfirmer">[Prix à confirmer]</p>
+          </div>
+
+          <div class="album album--plats">
+            <figure class="polaroid polaroid--tilt-l reveal">
+              <img src="images/crops/brochette.jpg" alt="Brochette de bœuf, frites maison et salade" width="325" height="317" loading="lazy">
+              <figcaption class="chalknote">brochette &amp; frites maison</figcaption>
+            </figure>
+            <figure class="polaroid polaroid--tilt-r reveal">
+              <img src="images/crops/oeufs-mimosa.jpg" alt="Œufs mimosa sur lit de salade" width="234" height="320" loading="lazy">
+              <figcaption class="chalknote">les œufs mimosa</figcaption>
+            </figure>
+            <figure class="polaroid reveal">
+              <img src="images/crops/assiette-composee.jpg" alt="Grande assiette composée : terrine, beignets et salades" width="280" height="368" loading="lazy">
+              <figcaption class="chalknote">l’assiette composée</figcaption>
+            </figure>
+            <figure class="polaroid polaroid--tilt-r reveal">
+              <img src="images/crops/table-mijote.jpg" alt="Plat mijoté servi à table avec un verre de vin rouge" width="245" height="320" loading="lazy">
+              <figcaption class="chalknote">le mijoté du jour</figcaption>
+            </figure>
+            <figure class="polaroid polaroid--tilt-l reveal">
+              <img src="images/crops/rouget.jpg" alt="Poisson en sauce accompagné de frites maison" width="181" height="320" loading="lazy">
+              <figcaption class="chalknote">poisson, sauce, frites</figcaption>
+            </figure>
+            <figure class="polaroid reveal">
+              <img src="images/crops/ile-flottante.jpg" alt="Île flottante aux amandes torréfiées" width="365" height="295" loading="lazy">
+              <figcaption class="chalknote">l’île flottante — forcément</figcaption>
+            </figure>
+            <figure class="polaroid polaroid--tilt-l reveal">
+              <img src="images/crops/fromages.jpg" alt="Assiette de fromages et salade" width="425" height="320" loading="lazy">
+              <figcaption class="chalknote">les fromages</figcaption>
+            </figure>
+            <figure class="polaroid polaroid--tilt-r reveal">
+              <img src="images/crops/panna-cotta.jpg" alt="Panna cotta au coulis de fruits rouges" width="430" height="320" loading="lazy">
+              <figcaption class="chalknote">panna cotta, coulis rouge</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mosaic" aria-hidden="true"></div>
+
+    <!-- ============ COUR & SALLE ============ -->
+    <section class="cour" id="cour">
+      <header class="cour__head reveal">
+        <h2 class="section-title">La cour <em>&amp;</em> la salle</h2>
+        <p class="section-sub">Une vigne dans la cour, une mosaïque au sol, une terrasse sur la rue.</p>
+      </header>
+
+      <div class="cour__grid">
+        <figure class="cadre cadre--haut reveal">
+          <img src="images/crops/cour-tables.jpg" alt="Tables de la cour à l'ombre de la treille" width="191" height="430" loading="lazy">
+          <figcaption>La cour, sous la treille</figcaption>
+        </figure>
+        <figure class="cadre cadre--haut reveal">
+          <img src="images/crops/cour-mur.jpg" alt="Le mur brut de la cour et les tables alignées" width="190" height="430" loading="lazy">
+          <figcaption>Le mur brut, l’ombre de la vigne</figcaption>
+        </figure>
+        <figure class="cadre cadre--large reveal">
+          <img src="images/crops/terrasse-rue.jpg" alt="La terrasse en bois côté rue, devant les maisons du quartier" width="415" height="310" loading="lazy">
+          <figcaption>La terrasse côté rue, plein quartier</figcaption>
+        </figure>
+        <figure class="cadre reveal">
+          <img src="images/crops/salle-ardoise.jpg" alt="La salle et sa grande ardoise, un midi de service" width="170" height="310" loading="lazy">
+          <figcaption>La salle, un midi — l’ardoise au mur</figcaption>
+        </figure>
+        <figure class="cadre cadre--large reveal">
+          <img src="images/crops/comptoir.jpg" alt="Le comptoir, la machine à café et les sirops" width="312" height="240" loading="lazy">
+          <figcaption>Le comptoir — café, sirops, apéro</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE : LA VIE DES ISLES ============ -->
+    <section class="vie" id="vie">
+      <header class="vie__head reveal">
+        <h2 class="section-title">Il se passe toujours<br>quelque chose aux Isles</h2>
+        <p class="section-sub">Plus qu’un resto&nbsp;: une maison de quartier. La preuve, punaisée ci-dessous.</p>
+      </header>
+
+      <div class="pinboard">
+        <article class="affichette affichette--tilt-l reveal">
+          <span class="affichette__tape" aria-hidden="true"></span>
+          <figure>
+            <img src="images/crops/concert.jpg" alt="Concert dans la salle : duo guitare et voix sur la mosaïque" width="300" height="400" loading="lazy">
+          </figure>
+          <h3>Concerts, chez nous</h3>
+          <p>Un duo qui s’installe sur la mosaïque, les tables qu’on pousse un peu. Programme affiché en vitrine. <span class="aconfirmer">[Agenda à confirmer]</span></p>
+        </article>
+
+        <article class="affichette affichette--tilt-r reveal">
+          <span class="affichette__tape" aria-hidden="true"></span>
+          <figure>
+            <img src="images/crops/affiche-vide-dressing.jpg" alt="Affiche du vide-dressing organisé au restaurant" width="258" height="372" loading="lazy">
+          </figure>
+          <h3>Vide-dressing</h3>
+          <p>Les portants au milieu des tables, un verre à la main. Une institution maison — l’affiche est d’origine.</p>
+        </article>
+
+        <article class="affichette reveal">
+          <span class="affichette__tape" aria-hidden="true"></span>
+          <figure>
+            <img src="images/crops/epicerie.jpg" alt="Les étagères de l'épicerie des Isles : vins, conserves artisanales" width="350" height="330" loading="lazy">
+          </figure>
+          <h3>L’épicerie des Isles</h3>
+          <p>Cave à vins &amp; conserves artisanales, comme l’annonce l’ardoise au-dessus des étagères. On repart avec une bouteille.</p>
+        </article>
+
+        <article class="affichette affichette--tilt-l reveal">
+          <span class="affichette__tape" aria-hidden="true"></span>
+          <figure>
+            <img src="images/crops/soiree.jpg" alt="Des habituées trinquent un soir d'événement" width="238" height="360" loading="lazy">
+          </figure>
+          <h3>Les soirées</h3>
+          <p>Anniversaires, apéros qui s’étirent, bières artisanales à la tireuse. Le quartier trinque ici.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="mosaic" aria-hidden="true"></div>
+
+    <!-- ============ INFOS ============ -->
+    <section class="infos" id="infos">
+      <div class="infos__grid">
+        <div class="infos__bloc reveal">
+          <h2 class="section-title">Venir aux Isles</h2>
+          <address class="infos__adresse">
+            29 rue des Chevaliers<br>
+            Haute-Île — 44400 Rezé
+          </address>
+          <a class="infos__tel" href="tel:+33240754906">02 40 75 49 06</a>
+          <p class="infos__mail"><a href="mailto:restolesisles@gmail.com">restolesisles@gmail.com</a></p>
+        </div>
+        <div class="infos__bloc reveal">
+          <h3 class="infos__soustitre">Horaires</h3>
+          <p class="aconfirmer">[Horaires à confirmer — appelez avant de venir]</p>
+          <h3 class="infos__soustitre">Réservation</h3>
+          <p>Par téléphone, tout simplement. <span class="aconfirmer">[Modalités à confirmer]</span></p>
+          <a class="btn btn--ligne btn--sombrefond" href="https://www.google.com/maps/dir/?api=1&amp;destination=29+rue+des+Chevaliers+44400+Rez%C3%A9" target="_blank" rel="noopener">Itinéraire →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__note chalknote reveal">on vous garde une place dans la cour</p>
+    <p class="footer__big reveal">À tout<br>de suite.</p>
+    <div class="footer__ligne reveal">
+      <span>Resto Les Isles</span>
+      <a href="tel:+33240754906">02 40 75 49 06</a>
+      <span>29 rue des Chevaliers, Rezé</span>
+    </div>
+    <div class="footer__legal reveal">
+      <p>Photos du restaurant. Horaires et prix&nbsp;: [à confirmer].</p>
+      <p><a href="mentions-legales.html">Mentions légales</a> · Création <a href="https://vokumagency.com" target="_blank" rel="noopener">Vokum</a></p>
+    </div>
+    <div class="mosaic" aria-hidden="true"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

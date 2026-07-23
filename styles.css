@@ -721,15 +721,9 @@ body.a-ouverture { overflow: hidden; }
     align-items: flex-start;
     margin-top: 0;
   }
-  /* le polaroid chevauche la fin du titre, façon collage */
-  .hero__photo {
-    margin-left: auto;
-    margin-right: -1vw;
-    margin-top: -6vw;
-    width: min(56vw, 230px);
-    transform: rotate(2.5deg);
-  }
-  .hero__text { margin-top: 1.4rem; }
+  /* pas de photo dans le hero mobile : affiche typographique pure */
+  .hero__photo { display: none; }
+  .hero__text { margin-top: 1.6rem; }
 
   .intro__grid { flex-direction: column; }
   .intro .polaroid { align-self: flex-end; }

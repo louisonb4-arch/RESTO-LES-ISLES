@@ -242,6 +242,7 @@ button:focus-visible {
   color: var(--rouge);
   letter-spacing: 0.005em;
 }
+.hero__griffe { display: none; }
 .hero__body {
   display: flex;
   align-items: flex-end;
@@ -688,19 +689,47 @@ body.a-ouverture { overflow: hidden; }
   .topbar__burger { display: flex; }
 
   .hero { padding-top: 5.5rem; }
+
+  /* affiche typographique : LES / ISLES pleine largeur, griffe craie dans le creux */
+  .hero__line { font-size: clamp(1.7rem, 9vw, 3.2rem); }
+  .hero__line--big {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0.1em;
+  }
+  .hero__line--big .mot {
+    font-size: clamp(3.4rem, 25vw, 8rem);
+    line-height: 0.92;
+  }
+  .hero__line--big .mot--isles { flex-basis: 100%; }
+  .hero__griffe {
+    display: inline-block;
+    text-transform: none;
+    flex: 1;
+    min-width: 0;
+    color: var(--vert);
+    font-size: clamp(1.05rem, 5vw, 1.5rem);
+    line-height: 1.1;
+    transform: rotate(-4deg);
+    padding: 0 0.2rem 0.6rem 0.9rem;
+  }
+
   .hero__body {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 1.2rem;
+    margin-top: 0;
   }
+  /* le polaroid chevauche la fin du titre, façon collage */
   .hero__photo {
-    margin-left: 0;
-    align-self: center;
-    width: min(74vw, 290px);
-    margin-top: 0.4rem;
+    margin-left: auto;
+    margin-right: -1vw;
+    margin-top: -6vw;
+    width: min(76vw, 300px);
+    transform: rotate(2.5deg);
   }
-  .hero__line--big { font-size: clamp(2.6rem, 12.5vw, 5rem); }
-  .hero__line { font-size: clamp(1.7rem, 8vw, 3rem); }
+  .hero__text { margin-top: 1.4rem; }
 
   .intro__grid { flex-direction: column; }
   .intro .polaroid { align-self: flex-end; }

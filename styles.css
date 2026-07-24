@@ -27,6 +27,12 @@
 
 html { scroll-behavior: smooth; }
 
+/* verrou anti-pan horizontal (rotations décoratives : polaroids, affichettes, griffe) */
+html, body { overflow-x: hidden; }
+@supports (overflow-x: clip) {
+  html, body { overflow-x: clip; }
+}
+
 body {
   background: var(--creme);
   color: var(--encre);
@@ -675,8 +681,9 @@ body.a-ouverture { overflow: hidden; }
   .album--plats { grid-template-columns: repeat(2, 1fr); }
   .album--plats .polaroid:nth-child(3n+2) { margin-top: 0; }
   .album--plats .polaroid:nth-child(2n) { margin-top: 1.6rem; }
-  .ardoise__cols { flex-direction: column; }
+  .ardoise__cols { flex-direction: column; align-items: stretch; }
   .ardoise__menu { position: static; flex-basis: auto; max-width: 32rem; }
+  .album--plats { width: 100%; }
   .pinboard { grid-template-columns: repeat(2, 1fr); }
   .affichette:nth-child(2) { margin-top: 1.6rem; }
   .affichette:nth-child(4) { margin-top: 0; }
